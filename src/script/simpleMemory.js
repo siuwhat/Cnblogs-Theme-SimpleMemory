@@ -89,7 +89,7 @@ if (initCheck()) {
         GhRepositories: 'Cnblogs-Theme-SimpleMemory',
         GhVersions: 'v1.1.8',
         CnVersions: 'v1.1.8',
-        blogUser: '',
+        blogUser: '世界を変える御宅族',
         blogAvatar: 'https://smallblog.xyz/wp-content/uploads/2019/08/镜音.jpg',
         blogStartDate: '2019-08-15',
         menuCustomList: {"title1": { // 标题
