@@ -1,8 +1,3 @@
-/*!
- * UPDATES AND DOCS AT: https://github.com/BNDong
- * https://www.cnblogs.com/bndong/
- * @author: BNDong, dbnuo@foxmail.com
- **/
 if (initCheck()) {
     var sidebarHtml =
         '<div class="container">' +
@@ -92,30 +87,10 @@ if (initCheck()) {
         blogUser: '',
         blogAvatar: 'https://smallblog.xyz/wp-content/uploads/2019/08/镜音.jpg',
         blogStartDate: '2019-08-15',
-        menuCustomList: {"title1": { // 标题
-                "data": [ // 列表数据 ['列表', '链接']
-                    ['我的博客1', 'https://www.cnblogs.com/bndong/'],
-                    ['我的博客2', 'https://www.cnblogs.com/bndong/'],
-                    ['我的博客3', 'https://www.cnblogs.com/bndong/'],
-                    ['我的博客4', 'https://www.cnblogs.com/bndong/'],
-                    ['我的博客5', 'https://www.cnblogs.com/bndong/'],
-                ],
-                "icon": "icon-brush_fill" // 配置图标，参考文档：定制化/字体图标库
-            },
-            "title2": { // 标题
-                "data": [ // 列表数据 ['列表', '链接']
-                    ['我的博客6', 'https://www.cnblogs.com/bndong/'],
-                    ['我的博客7', 'https://www.cnblogs.com/bndong/'],
-                    ['我的博客8', 'https://www.cnblogs.com/bndong/'],
-                    ['我的博客9', 'https://www.cnblogs.com/bndong/'],
-                    ['我的博客10', 'https://www.cnblogs.com/bndong/'],
-                ],
-                "icon": "icon-brush_fill" // 配置图标，参考文档：定制化/字体图标库
-            },
-        },
+        
         menuNavList: [// 列表数据 ['导航名称', '链接']
-        ['我的博客1', 'https://www.cnblogs.com/bndong/'],
-        ['我的博客2', 'https://www.cnblogs.com/bndong/'],
+        ['博客园博客', 'https://www.cnblogs.com/otakus'],
+        ['我的博客2', 'https://blog.csdn.net/weixin_44581152'],
     ],
         menuUserInfoBgImg: 'https://smallblog.xyz/wp-content/uploads/2019/08/镜音.jpg',
         webpageTitleOnblur: "♪(^∇^*)",
@@ -201,7 +176,7 @@ if (initCheck()) {
         essayCodeHighlighting: 'a11y-dark',
         essaySuffix: {
             codeImgUrl: '',
-            aboutHtml: 'I LIKE ❤',
+            aboutHtml: '改变世界的御宅族',
             copyrightHtml: '',
             supportHtml: ''
         },
