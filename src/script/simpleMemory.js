@@ -120,7 +120,7 @@ if (initCheck()) {
         menuUserInfoBgImg: 'https://smallblog.xyz/wp-content/uploads/2019/08/镜音.jpg',
         webpageTitleOnblur: "♪(^∇^*)",
         webpageTitleOnblurTimeOut: 500,
-        webpageTitleFocus: "(*´∇｀*) 欢迎！",
+        webpageTitleFocus: "(*´∇｀*) 欢迎光临！",
         webpageTitleFocusTimeOut: 1000,
         webpageIcon: "https://raw.githubusercontent.com/BNDong/Cnblogs-Theme-SimpleMemory/master/img/blog_logo.gif",
         fontIconExtend: "//at.alicdn.com/t/font_543384_ezv3l7gd9r7.css",
