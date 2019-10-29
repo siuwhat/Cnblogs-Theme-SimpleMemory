@@ -90,7 +90,7 @@ if (initCheck()) {
         GhVersions: 'v1.1.8',
         CnVersions: 'v1.1.8',
         blogUser: '',
-        blogAvatar: 'https://smallblog.xyz/wp-content/uploads/2019/08/镜音.jpg',
+        blogAvatar: 'https://smallblog.xyz/wp-content/uploads/2019/10/IOD9OVEZ_RMQ__M3NXC.jpg',
         blogStartDate: '2019-08-15',
         
         menuNavList: [// 列表数据 ['导航名称', '链接']
@@ -172,10 +172,12 @@ if (initCheck()) {
         homeTopImg: [
             "https://raw.githubusercontent.com/BNDong/Cnblogs-Theme-SimpleMemory/master/img/home_top_bg.jpg"
         ],
-        homeBannerText: "好好学习，不要玩游戏",
+        homeBannerText: "所望隔山海，山海不可平",
         homeBannerTextType: "one",
         essayTopImg: [
-            "https://raw.githubusercontent.com/BNDong/Cnblogs-Theme-SimpleMemory/master/img/nothome_top_bg.jpg"
+            "https://smallblog.xyz/wp-content/uploads/2019/10/178136.jpg",
+			"https://smallblog.xyz/wp-content/uploads/2019/10/177236.jpg",
+			"https://smallblog.xyz/wp-content/uploads/2019/10/296575.jpg",
         ],
         essayCodeHighlightingType: 'prettify',
         essayCodeHighlighting: 'a11y-dark',
@@ -187,7 +189,7 @@ if (initCheck()) {
         },
         bottomBlogroll: [],
         bottomText: {
-            icon: "❤️",
+            icon: "=-=",
             left:"好好学习",
             right:"不玩游戏"
         },
