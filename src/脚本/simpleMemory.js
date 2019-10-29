@@ -1,8 +1,3 @@
-/*!
- * UPDATES AND DOCS AT: https://github.com/BNDong
- * https://www.cnblogs.com/bndong/
- * @author: BNDong, dbnuo@foxmail.com
- **/
 if (initCheck()) {
     var sidebarHtml =
         '<div class="container">' +
