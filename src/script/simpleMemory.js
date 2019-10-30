@@ -67,7 +67,7 @@ if (initCheck()) {
         '    <canvas id="notHomeTopCanvas"></canvas>' +
         '    <div class="vertical">' +
         '        <div class="main-header-content inner">' +
-        '            <link href="https://fonts.proxy.ustclug.org/css?family=Playball" rel="stylesheet">' +
+        '            <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">' +
         '            <h1 class="page-title" style="font-family: \'Playball\', cursive;" id="homeTopTitle"></h1>' +
         '            <h2 class="page-description" id="hitokoto"></h2>' +
         '            <h3 class="page-author" id="hitokotoAuthor"></h3>' +
@@ -87,20 +87,24 @@ if (initCheck()) {
     window.cnblogsConfigDefault = {
         GhUserName: 'BNDong',
         GhRepositories: 'Cnblogs-Theme-SimpleMemory',
-        GhVersions: 'v1.1.2',
-        CnVersions: "",
-        blogUser: "",
-        blogAvatar: "",
-        blogStartDate: "2019-01-01",
-        menuCustomList: {},
-        menuNavList: [],
-        menuUserInfoBgImg: '',
-        webpageTitleOnblur: "(oﾟvﾟ)ノ Hi",
+        GhVersions: 'v1.1.8',
+        CnVersions: 'v1.1.8',
+        blogUser: '',
+        blogAvatar: 'https://smallblog.xyz/wp-content/uploads/2019/10/IOD9OVEZ_RMQ__M3NXC.jpg',
+        blogStartDate: '2019-08-15',
+        
+        menuNavList: [// 列表数据 ['导航名称', '链接']
+        ['博客园博客', 'https://www.cnblogs.com/otakus'],
+        ['CSDN博客', 'https://blog.csdn.net/weixin_44581152'],
+        ['掘金社区', 'https://juejin.im/user/5db994376fb9a020891af0e4'],
+    ],
+        menuUserInfoBgImg: 'https://smallblog.xyz/wp-content/uploads/2019/08/镜音.jpg',
+        webpageTitleOnblur: "♪(^∇^*)",
         webpageTitleOnblurTimeOut: 500,
         webpageTitleFocus: "(*´∇｀*) 欢迎回来！",
         webpageTitleFocusTimeOut: 1000,
-        webpageIcon: "",
-        fontIconExtend: "",
+        webpageIcon: "https://raw.githubusercontent.com/BNDong/Cnblogs-Theme-SimpleMemory/master/img/blog_logo.gif",
+        fontIconExtend: "//at.alicdn.com/t/font_543384_ezv3l7gd9r7.css",
         progressBar: {
             id: 'top-progress-bar',
             color: '#77b6ff',
@@ -167,29 +171,31 @@ if (initCheck()) {
             animateSections: true
         },
         homeTopImg: [
-            "https://gitee.com/dbnuo/Cnblogs-Theme-SimpleMemory/raw/master/img/home_top_bg.jpg"
+            "https://raw.githubusercontent.com/BNDong/Cnblogs-Theme-SimpleMemory/master/img/home_top_bg.jpg"
         ],
-        homeBannerText: "",
-        homeBannerTextType: "jinrishici",
+        homeBannerText: "所望隔山海，山海不可平",
+        homeBannerTextType: "one",
         essayTopImg: [
-            "https://gitee.com/dbnuo/Cnblogs-Theme-SimpleMemory/raw/master/img/nothome_top_bg.jpg"
+            "https://github.com/siuwhat/cnblogs/blob/master/qx.jpg",
+			"https://github.com/siuwhat/cnblogs/blob/master/qx2.jpg",
+			"https://github.com/siuwhat/cnblogs/blob/master/qx3.jpg",
         ],
-        essayCodeHighlightingType: 'cnblogs',
-        essayCodeHighlighting: '',
+        essayCodeHighlightingType: 'prettify',
+        essayCodeHighlighting: 'a11y-dark',
         essaySuffix: {
             codeImgUrl: '',
-            aboutHtml: '',
+            aboutHtml: '改变世界の御宅族',
             copyrightHtml: '',
             supportHtml: ''
         },
         bottomBlogroll: [],
         bottomText: {
-            icon: "❤️",
-            left: "",
-            right: ""
+            icon: "=-=",
+            left:"时机已至",
+            right:"势在必行"
         },
         footerStyle: 2,
-        consoleList: [],
+        consoleList: ["友情链接",'https://www.smallblog.xyz'],
         themeAuthor: false,
     };
 
@@ -273,48 +279,38 @@ function initCheck() {
 
 // get version config
 function getVersionConfig() {
+    var url = 'https://raw.githubusercontent.com/' + window.cnblogsConfigDefault.GhUserName + '/' + window.cnblogsConfigDefault.GhRepositories + '/master/version.conf';
 
-    var confObj;
-    window.cnblogsConfigDefault.CnVersions = window.cnblogsConfigDefault.GhVersions;
-    if (window.cnblogsConfigDefault.GhUserName === 'BNDong') {
+    $.ajax({
+        type: "get",
+        url: url,
+        dataType: "text",
+        async: false,
+        success: function(conf)
+        {
+            var confObj = conf ? JSON.parse(conf) : false;
+            var confVersion = getEndConfVal(window.cnblogsConfigDefault.GhVersions);
+            window.cnblogsConfigDefault.CnVersions = window.cnblogsConfigDefault.GhVersions;
 
-        $.getScript('https://gitee.com/dbnuo/Cnblogs-Theme-SimpleMemory/raw/master/version.js');
-
-        confObj = window.themeVersion;
-    } else {
-        var url = 'https://raw.githubusercontent.com/' + window.cnblogsConfigDefault.GhUserName + '/' + window.cnblogsConfigDefault.GhRepositories + '/master/version.conf';
-
-        $.ajax({
-            type: "get",
-            url: url,
-            dataType: "text",
-            async: false,
-            success: function(conf)
-            {
-                confObj = conf ? JSON.parse(conf) : false;
+            if (confVersion) {
+                window.cnblogsConfigDefault.GhVersions = confVersion;
             }
-        });
-    }
 
-    var confVersion = getEndConfVal(window.cnblogsConfigDefault.GhVersions);
-
-    if (confVersion) {
-        window.cnblogsConfigDefault.GhVersions = confVersion;
-    }
-
-    function getEndConfVal(thisGhVersion) {
-        var endVal = '';
-        confObj && $.each(confObj, function (i) {
-            if (confObj[i][0] === thisGhVersion) {
-                endVal = confObj[i][1]; return false;
+            function getEndConfVal(thisGhVersion) {
+                var endVal = '';
+                confObj && $.each(confObj, function (i) {
+                    if (confObj[i][0] === thisGhVersion) {
+                        endVal = confObj[i][1];return false;
+                    }
+                });
+                if (endVal === '') {
+                    return thisGhVersion;
+                } else {
+                    return getEndConfVal(endVal);
+                }
             }
-        });
-        if (endVal === '') {
-            return thisGhVersion;
-        } else {
-            return getEndConfVal(endVal);
         }
-    }
+    });
 }
 
 // get file url
