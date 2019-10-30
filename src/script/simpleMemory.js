@@ -176,9 +176,9 @@ if (initCheck()) {
         homeBannerText: "所望隔山海，山海不可平",
         homeBannerTextType: "one",
         essayTopImg: [
-            "https://github.com/siuwhat/cnblogs/blob/master/qx.jpg",
-			"https://github.com/siuwhat/cnblogs/blob/master/qx2.jpg",
-			"https://github.com/siuwhat/cnblogs/blob/master/qx3.jpg",
+            "https://smallblog.xyz/wp-content/uploads/2019/10/qx.jpg",
+			"https://smallblog.xyz/wp-content/uploads/2019/10/qx3.jpg",
+			"https://smallblog.xyz/wp-content/uploads/2019/10/1001099.jpg",
         ],
         essayCodeHighlightingType: 'prettify',
         essayCodeHighlighting: 'a11y-dark',
