@@ -96,6 +96,7 @@ if (initCheck()) {
         menuNavList: [// 列表数据 ['导航名称', '链接']
         ['博客园博客', 'https://www.cnblogs.com/otakus'],
         ['CSDN博客', 'https://blog.csdn.net/weixin_44581152'],
+        ['掘金社区', 'https://juejin.im/user/5db994376fb9a020891af0e4'],
     ],
         menuUserInfoBgImg: 'https://smallblog.xyz/wp-content/uploads/2019/08/镜音.jpg',
         webpageTitleOnblur: "♪(^∇^*)",
@@ -175,23 +176,23 @@ if (initCheck()) {
         homeBannerText: "所望隔山海，山海不可平",
         homeBannerTextType: "one",
         essayTopImg: [
-            "https://smallblog.xyz/wp-content/uploads/2019/10/178136.jpg",
-			"https://smallblog.xyz/wp-content/uploads/2019/10/177236.jpg",
-			"https://smallblog.xyz/wp-content/uploads/2019/10/296575.jpg",
+            "https://github.com/siuwhat/cnblogs/blob/master/qx.jpg",
+			"https://github.com/siuwhat/cnblogs/blob/master/qx2.jpg",
+			"https://github.com/siuwhat/cnblogs/blob/master/qx3.jpg",
         ],
         essayCodeHighlightingType: 'prettify',
         essayCodeHighlighting: 'a11y-dark',
         essaySuffix: {
             codeImgUrl: '',
-            aboutHtml: '改变世界的御宅族',
+            aboutHtml: '改变世界の御宅族',
             copyrightHtml: '',
             supportHtml: ''
         },
         bottomBlogroll: [],
         bottomText: {
             icon: "=-=",
-            left:"好好学习",
-            right:"不玩游戏"
+            left:"时机已至",
+            right:"势在必行"
         },
         footerStyle: 2,
         consoleList: ["友情链接",'https://www.smallblog.xyz'],
