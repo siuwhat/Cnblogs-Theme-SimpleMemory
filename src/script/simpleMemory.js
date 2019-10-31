@@ -92,7 +92,7 @@ if (initCheck()) {
         blogUser: '',
         blogAvatar: 'https://smallblog.xyz/wp-content/uploads/2019/10/IOD9OVEZ_RMQ__M3NXC.jpg',
         blogStartDate: '2019-08-15',
-        
+
         menuNavList: [// 列表数据 ['导航名称', '链接']
         ['博客园博客', 'https://www.cnblogs.com/otakus'],
         ['CSDN博客', 'https://blog.csdn.net/weixin_44581152'],
@@ -339,4 +339,4 @@ function setFileNameMin(file, directory) {
     file.search('.min') === -1 && fileArr.push('min');
     suffix != null && fileArr.push(suffix);
     return (typeof directory !== 'undefined' ? ('src/' + directory + '/' + fileArr.join('.')) : (fileArr.join('.')));
-}
+} 
