@@ -97,6 +97,7 @@ if (initCheck()) {
         ['博客园博客', 'https://www.cnblogs.com/otakus'],
         ['CSDN博客', 'https://blog.csdn.net/weixin_44581152'],
         ['掘金社区', 'https://juejin.im/user/5db994376fb9a020891af0e4'],
+	['github', 'https://github.com/siuwhat/'],
     ],
         menuUserInfoBgImg: 'https://smallblog.xyz/wp-content/uploads/2019/08/镜音.jpg',
         webpageTitleOnblur: "♪(^∇^*)",
