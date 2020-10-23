@@ -85,12 +85,12 @@ if (initCheck()) {
         '<div id="rightMenu"></div>';
 
     window.cnblogsConfigDefault = {
-        GhUserName: 'BNDong',
+        GhUserName: 'siuwhat',
         GhRepositories: 'Cnblogs-Theme-SimpleMemory',
         GhVersions: 'v1.1.8',
         CnVersions: 'v1.1.8',
         blogUser: '',
-        blogAvatar: 'https://smallblog.xyz/wp-content/uploads/2019/10/IOD9OVEZ_RMQ__M3NXC.jpg',
+        blogAvatar: 'https://images.cnblogs.com/cnblogs_com/otakus/1868504/o_201022110409镜音.jpg',
         blogStartDate: '2019-08-15',
 
         menuNavList: [// 列表数据 ['导航名称', '链接']
@@ -99,7 +99,7 @@ if (initCheck()) {
         ['掘金社区', 'https://juejin.im/user/5db994376fb9a020891af0e4'],
 	['Github', 'https://github.com/siuwhat/'],
     ],
-        menuUserInfoBgImg: 'https://smallblog.xyz/wp-content/uploads/2019/08/镜音.jpg',
+        menuUserInfoBgImg: 'https://images.cnblogs.com/cnblogs_com/otakus/1868504/o_201022110409镜音.jpg',
         webpageTitleOnblur: "♪(^∇^*)",
         webpageTitleOnblurTimeOut: 500,
         webpageTitleFocus: "(*´∇｀*) 欢迎回来！",
@@ -177,9 +177,9 @@ if (initCheck()) {
         homeBannerText: "所望隔山海，山海不可平",
         homeBannerTextType: "one",
         essayTopImg: [
-            "https://smallblog.xyz/wp-content/uploads/2019/10/qx.jpg",
-			"https://smallblog.xyz/wp-content/uploads/2019/10/qx3.jpg",
-			"https://smallblog.xyz/wp-content/uploads/2019/10/1001099.jpg",
+            "https://images.cnblogs.com/cnblogs_com/otakus/1868504/o_2010230051442026263.jpg",
+			"https://images.cnblogs.com/cnblogs_com/otakus/1868504/o_2010230051482029229.jpg",
+			"https://images.cnblogs.com/cnblogs_com/otakus/1868504/o_2010230051532029234.jpg",
         ],
         essayCodeHighlightingType: 'prettify',
         essayCodeHighlighting: 'a11y-dark',
@@ -191,9 +191,9 @@ if (initCheck()) {
         },
         bottomBlogroll: [],
         bottomText: {
-            icon: "=-=",
-            left:"时机已至",
-            right:"势在必行"
+            icon: "もヮも",
+            left:"乐正",
+            right:"雾泠"
         },
         footerStyle: 2,
         consoleList: ["友情链接",'https://www.smallblog.xyz'],
